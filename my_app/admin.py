@@ -1,5 +1,5 @@
 from django.contrib import admin
-from my_appp.models import Article
+from my_app.models import Article
 
 # Register your models here.
 admin.site.register(Article)

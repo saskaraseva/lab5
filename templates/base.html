@@ -3,6 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>{% block title %}{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'Bootstrap/css/bootstrap.css' %}">
 </head>
-<body>{% block body %}{% endblock %}</body>
+<body>
+    {% block body %}{% endblock %}
+</body>
 </html>
