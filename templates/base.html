@@ -8,5 +8,8 @@
 </head>
 <body>
     {% block body %}{% endblock %}
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'aaa.css' %}">
+    <img src="{% static 'images/flowers.jpg' %}" alt='bs'>
 </body>
 </html>

@@ -27,4 +27,5 @@ urlpatterns = [
     url(r'^groups/', views.GroupsView.as_view(), name='groups'),
     url(r'^group/(?P<id>\d+)', views.GroupView.as_view(), name='group'),
 ]
-
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_URL)
